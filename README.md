@@ -6,5 +6,4 @@
 
 ## インストール
 windows(x64)向けにパッケージしてあります。
-move_jiro_savedata-win32-x64ディレクトリをダンロードし、
-その中の実行ファイルを実行してください。
+move_jiro_savedata-win32-x64.zipをダウンロードしてください。

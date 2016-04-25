@@ -1,0 +1,129 @@
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    基本のスタイル
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+*{
+	transition: 0.3s ease;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+	margin: 0;
+    padding: 0;
+	font-size: 16px;
+	font-family: "游明朝", YuMincho, "ヒラギノ明朝 ProN W3", "Hiragino Mincho ProN", "HG明朝E", "ＭＳ Ｐ明朝", "ＭＳ 明朝", ser;
+	background-color: #fff;
+	background: -webkit-gradient(radial, 50% 60%, 0, 50% 60%, 123, color-stop(1.00, #ffffff), color-stop(0.00, #e9f9ff));
+	background: -webkit-radial-gradient(50% 60%, circle, #ffffff, #e9f9ff);
+	background: -moz-radial-gradient(50% 60%, circle, #ffffff, #e9f9ff);
+	background: -o-radial-gradient(50% 60%, circle, #ffffff, #e9f9ff);
+	background: -ms-radial-gradient(50% 60%, circle, #ffffff, #e9f9ff);
+	background: radial-gradient(50% 60%, circle, #ffffff, #e9f9ff);
+}
+
+section{
+    display: inline-block;
+    position: fixed;
+    width: 100%;
+	height: 100vh;
+	overflow: auto;
+    top: 0;
+}
+
+h1{
+	text-align: center;
+	font-size: 200%;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+h2{
+	font-size: 150%;
+	margin: 40px 0 10px 20px;
+	text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+p{
+	margin: 0 20px;
+	text-align: center;
+}
+
+button{
+	padding: 7px;
+	margin: 3px;
+	background-color: #fff;
+	box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+button:hover{
+	background-color: #19537b;
+	color: #fff;
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+input{
+	margin: 0 0 0 40px;
+	padding: 7px;
+	width: 70%;
+	background-color: rgba(255, 255, 255, 0.7);
+	border: solid 1px rgba(0, 0, 0, 0.3);
+	border-radius: 5px;
+}
+
+#analyze_savedata,
+#start_copy,
+#app_quit{
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	padding: 15px;
+	font-size: 120%;
+}
+
+
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    太鼓さん次郎の実行ファイル選択画面に関するスタイル
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+#select_taikojiro_exe{
+    left: 0;
+}
+
+
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    動作の確認画面に関するスタイル
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+#check_copy{
+    left: 100vw;
+	display: none;
+}
+
+#check_copy > table{
+	margin: 10px auto;
+	max-width: calc(100% - 20px);
+	word-break: break-all;
+	border-collapse: collapse;
+}
+
+#check_copy > table th{
+	font-weight: bold;
+	font-size: 120%;
+}
+
+#check_copy > table th,
+#check_copy > table td{
+	border: 1px solid #999;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* -+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+    作業完了画面に関するスタイル
+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ */
+#done{
+	display: none;
+    left: 100vw;
+}
+
+
+

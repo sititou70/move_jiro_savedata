@@ -3,7 +3,7 @@
 var App = require("app");
 var Menu = require("menu");
 var BrowserWindow = require("browser-window");
-var ipcMain = require('electron').ipcMain;
+var ipcMain = require("electron").ipcMain;
 var functions = require("./js/functions");
 var mainWindow = null;
 
@@ -20,7 +20,7 @@ App.on("ready", function(){
 	// メイン画面の表示。ウィンドウの幅、高さを指定できる
 	mainWindow = new BrowserWindow({width: 800, height: 500, resizable: false, center: true, autoHideMenuBar: true});
 	mainWindow.loadURL("file://" + __dirname + "/index.html");
-
+	
 	// ウィンドウが閉じられたらアプリも終了
 	mainWindow.on("closed", function(){
 		mainWindow = null;

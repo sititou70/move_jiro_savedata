@@ -6,4 +6,4 @@
 
 ## インストール
 windows(x64)向けにパッケージしてあります。
-move_jiro_savedata-win32-x64.zipをダウンロードしてください。
+詳しくは[リリース情報](https://github.com/sititou70/move_jiro_savedata/releases)を確認してください。

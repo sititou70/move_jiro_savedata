@@ -36,9 +36,6 @@ $("#app_quit").click(function(){
 	ipcRenderer.send("app_quit");
 });
 
-
-
-
 //ipc handlers
 ipcRenderer.on("alert", function(event ,message){
 	alert(message);

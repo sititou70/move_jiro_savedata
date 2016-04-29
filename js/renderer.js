@@ -1,10 +1,6 @@
 var ipcRenderer = require('electron').ipcRenderer
 
-//functions
-
-
 //set event handler
-console.log($(".open_file_dialog"));
 $(".open_file_dialog").click(function(){
 	var path = ipcRenderer.sendSync("get_jiro_path");
 	if(path != "not_selected")$(this).prev().val(path);

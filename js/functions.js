@@ -14,7 +14,7 @@ var taikojiro_path_setter = function(path, mode){
 	}else{
 		to_taikojiro_exe_path = path;
 	}
-}
+};
 
 var open_file_dialog = function(title, filter, callback){
 	var win = BrowserWindow.getFocusedWindow();
@@ -181,8 +181,9 @@ var start_copy = function(webContents){
 
 //ファイルからMD5を計算する
 var get_MD5_from_file = function(path){
+	var content;
 	try{
-		var content = fs.readFileSync(path);
+		content = fs.readFileSync(path);
 	}catch(e){
 		return e.code;
 	}

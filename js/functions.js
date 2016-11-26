@@ -1,7 +1,7 @@
 var BrowserWindow = require("browser-window");
 var fs = require("fs");
-var crypto = require('crypto');
-var dialog = require('dialog');
+var crypto = require("crypto");
+var dialog = require("dialog");
 
 var from_taikojiro_exe_path = "";
 var to_taikojiro_exe_path = "";

@@ -1,22 +1,19 @@
 'use strict';
 
-var App = require("app");
-var Menu = require("menu");
-var BrowserWindow = require("browser-window");
-var ipcMain = require("electron").ipcMain;
+const {app, Menu, BrowserWindow, ipcMain} = require("electron");
 var functions = require("./js/functions");
 var mainWindow = null;
 
 
 // 全てのウィンドウが閉じたら終了
-App.on("window-all-closed", function(){
+app.on("window-all-closed", function(){
 	if(process.platform != "darwin"){
-		App.quit();
+		app.quit();
 	}
 });
 
 // Electronの初期化完了後に実行
-App.on("ready", function(){
+app.on("ready", function(){
 	// メイン画面の表示。ウィンドウの幅、高さを指定できる
 	mainWindow = new BrowserWindow({width: 800, height: 500, resizable: false, center: true, autoHideMenuBar: true});
 	mainWindow.loadURL("file://" + __dirname + "/index.html");
@@ -47,7 +44,7 @@ ipcMain.on("start_copy", function(event){
 });
 
 ipcMain.on("app_quit", function(event){
-	App.quit();
+	app.quit();
 });
 
 //メニューバーを定義
@@ -58,11 +55,11 @@ var menu = Menu.buildFromTemplate([
 			{
 				label: "Quit",
 				click: function(){
-					App.quit();
+					app.quit();
 				}
 			}
 		]
 	}
 ]);
 Menu.setApplicationMenu(menu);
-
+	

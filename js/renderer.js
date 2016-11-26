@@ -1,4 +1,4 @@
-var ipcRenderer = require('electron').ipcRenderer
+var ipcRenderer = require("electron").ipcRenderer;
 
 //set event handler
 $(".open_file_dialog").click(function(){
